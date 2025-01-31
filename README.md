@@ -234,6 +234,12 @@ The changes will now take effect.
 &nbsp;&nbsp;&nbsp;&nbsp; [2] Deselest "Month_Ending"\
 &nbsp;&nbsp;&nbsp;&nbsp; [3] Select "Short Month"\
 &nbsp;&nbsp;&nbsp;&nbsp; [4] Note how it updates in the X-axis\
-&nbsp;&nbsp;&nbsp;&nbsp; [5] Note how the X-axis formatting changes\
+&nbsp;&nbsp;&nbsp;&nbsp; [5] Note how the X-axis formatting changes
 
 ![alt text](image-28.png)
+Your Chart should now be very similair to the example\
+The tool tips shoulld display properly as well as the correct format for the X-axis\
+Ours
+![alt text](image-30.png)
+Target
+![alt text](image-29.png)
