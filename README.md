@@ -1,12 +1,11 @@
 # Recreating a Dashboard in PowerBI
-In this workhsop we will recreate some of the charts in the following published dashboard, namely the line chart and Slicer.\
-
+In this workhsop we will be taking inspiration from a published NHS PowerBI Dashbpard.\
 
 ![alt text](image-2.png) 
 
 https://app.powerbi.com/view?r=eyJrIjoiOTNjNTRhZDQtOTFhNy00MTNmLWIxODgtNTZiNWQ5YWViYTc4IiwidCI6IjUwZjYwNzFmLWJiZmUtNDAxYS04ODAzLTY3Mzc0OGU2MjllMiIsImMiOjh9\
 
-In addition to this we will alter the tables, create a Clustered Bar Char and add two call out cards.
+We will make a few ammendments and add bar charts and call out cards..
 
 ![alt text](image-38.png)
 
@@ -327,4 +326,5 @@ Firstly, to explore another way to change the name of fields on the display, we 
 ![alt text](image-37.png)
 
 additional text added
+jkjhkjh
 
