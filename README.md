@@ -47,17 +47,6 @@ The columns with:
 
 ![alt text](image-4.png)
 
-# Step 4 - Add the Title
-
- 1. Select `Insert` from the top left 
- 1. Select `Text Box`
-
-![alt text](image-31.png)
-
- 1. Set the font to Verdana, Size 14 and Bold
- 1. Enter the title `Monthly HES data for Admited Patient Care by Age Band`
-
-![alt text](image-32.png)
 
 # Step 4 - First Visual - Line Chart
 Select  
@@ -315,7 +304,7 @@ Experiement with the Slicer and note the format of the data within.
 ### Step 6a - Data Prep
 
 Firstly, to explore another way to change the name of fields on the display, we will change the name of the columns in `Data view`.\
- Changes made here will affect all visuals that the fields are involved in.\
+ Changes made here will affect all visuals that the columns are involved in.\
   (We are doing this instead of renaming the fields for the specific visual as we did before)
 
  1. Select `Data View` in the far left panel 
@@ -341,26 +330,8 @@ Firstly, to explore another way to change the name of fields on the display, we 
 
 ![alt text](image-54.png)
 
-### Step 6b - Creating Summary Table(Matrix)
 
-1. Ensure you are in the `canvas view`
-1. Add a `Matrix Chart`
-1. Add the newly created `Fiscal Month and Year` to the `Column` field
-1. Add the newly renamed columns to the `Values` field 
-1. You will notice that the matrix is not displayed properly. We will address this next.
-
-![alt text](image-57.png)
-
-
-
-## Step 7 - Clustered Bar Chart
-
-In order to create this chart we need to Tranform the data.
-
-![alt text](image-51.png)
-
-
-### Step 7A - Unpivoting Columns
+### Step 6b - Unpivoting Columns
 
 The data in its raw from as supplied needs some transformation in order to create some other charts. \
 
@@ -372,7 +343,7 @@ This will break our line chart, but it can be easily fixed.
 1. Select `Transform data` from the top bar
 
 1. In the power query window hold `ctrl` and select the 5 columns we are working with
-  1. FInished consultant episodes
+  1. Finished consultant episodes
   1. Ordinary Admission Episodes
   1. Day Case Episodes
   1. Finished Admission EPisodes
@@ -382,10 +353,9 @@ This will break our line chart, but it can be easily fixed.
 
 ![alt text](image-41.png)
 
-This will collapse the 5 columns into two, one called `Attribute` and another called `Total`.\
+This will collapse the 5 columns into two, one called `Attribute` and another called `Value`.\
 
-You can rename these to your liking. \
-In the example they have been renamed `Admission type` and `Total` \
+Rename the columns to `Admission type` and `Total` \
 To remane you can right click on the column header and select `Rename` Or \
 1. Select `Rename` from the top menu in the `Transform` Tab
 
@@ -397,41 +367,96 @@ Once you are finished
 
 ![alt text](image-44.png)
 
-As we have removed the columns that the line chart was built on this chart will now sow an error. \
+As we have removed the columns that the line chart was built on this chart will now show an error. \
 This is easy to fix.
-1. ENsure you are on the `canvas` view
+1. Ensure you are on the `canvas` view
 1. Deselect all of the fields in the Y-axis and add the new `Total` column to the Y-axis
 1. Add the new `Admission Type` to the `Legend`
 
 ![alt text](image-48.png)
 
-The colours of the lines will have to be fixed again as well as removing the title of the legend. \
+The colours of the lines will have to be fixed again, a comma should be added to the totals column and the title of the legend should be removed. \
 This reformatting is left as an exercise. 
+
+![alt text](image-63.png)
 
 ![alt text](image-49.png)
 
+### Step 6b - Creating Summary Table(Matrix)
 
-### Step 7B - Creating Clustered Bar Chart
+1. Add a `Matrix Chart`
+1.  Add the newly created `Admission Type`column to the `Row` field 
+1. Add the newly created `Fiscal Month and Year` to the `Column` field
+1. Add `Total`to the `Values` field
+
+![alt text](image-59.png)
+
+1. Row and column Subtotals can be toggled off in the `Format Visual` tab
+
+![alt text](image-60.png)
+
+Give the visual an outline as before, resize and move.
+
+**_Note_** Notice how selecting cells, column and row headers affects the line chart.
+
+## Step 7 - Clustered Bar Chart
+
+Select Empty Space on the Canvas and:
+1. Select `Clustered column chart` from th `Build visual` tab
+1. Add `Admission Type` to the X-Axis
+1. Add `Fiscal Month and YEar` to the `Columns` field
+1. Add `Total` to the `Values` field.
+
+![alt text](image-61.png)
+
+Resize the image, add an outline and remove legend and axis titles. \
+This is left as an exercise.
+
+![alt text](image-62.png)
+
+
+## Step 8 - Call out cards
+
+We will create two call out cards, one with the Total and the other with Monthly Average per Age band
+
+Ensure you have selected white space on the canvas then:
+1. Select `Card` from `Build visual`
+1. Add `Total` column to `Fields`
+
+![alt text](image-65.png)
+
+1. Turn off `Category Label` in `Visual` under `Format visual`
+
+![alt text](image-66.png)
+
+1. Add a title and format to your liking
+
+![alt text](image-67.png)
+
+Resize, add an outline
+
+Repeat the above for the second card except 
+
+1. Select `Average` when adding to `Fields`
+
+![alt text](image-68.png)
+
+Resize and arrange
+
+![alt text](image-69.png)
 
 
 
+## Finally... add a Title!!
 
+ 1. Select `Insert` from the top left 
+ 1. Select `Text Box`
 
+![alt text](image-31.png)
 
-![alt text](image-40.png)
-## Step 6 - Summary Tables
+ 1. Set the font to Verdana, Size 14 and Bold
+ 1. Enter the title `Monthly HES data for Admited Patient Care by Age Band`
 
-We will create the following summary table 
-
-![alt text](image-36.png)
-
-Firstly, to explore another way to change the name of fields on the display, we will change the name of the columns in `Data view`. Changes made here will affect all visuals that the fields are involved in.
-
- 1. Select `Data View` in the far left panel 
- 1. Right click on a column you wish to rename 
- 1. Enter the new name, and continue for all relevant columns, these will be the columns with `commas` that you inserted before
-
-
-![alt text](image-37.png)
+![alt text](image-32.png)
 
 
