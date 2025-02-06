@@ -317,7 +317,7 @@ Firstly, to explore another way to change the name of fields on the display, we 
  * Finished Admission Episodes
  * Emergency Admissions
 
-  ![alt text](image-52.png)
+![alt text](Images/image-52.png)
 
  Secondly we will create a column for `Fiscal Month and Year`
 
