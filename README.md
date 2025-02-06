@@ -378,6 +378,7 @@ The colours of the lines will have to be fixed again, a comma should be added to
 This reformatting is left as an exercise. 
 
 `![alt text](Images/image-63.png)
+
 `![alt text](Images/image-49.png)
 
 ### Step 6b - Creating Summary Table(Matrix)
