@@ -3,7 +3,7 @@ In this workhsop we will be taking inspiration from a published NHS PowerBI Dash
 
 `![alt text](Images/image-2.png)
 
-https://app.powerbi.com/view?r=eyJrIjoiOTNjNTRhZDQtOTFhNy00MTNmLWIxODgtNTZiNWQ5YWViYTc4IiwidCI6IjUwZjYwNzFmLWJiZmUtNDAxYS04ODAzLTY3Mzc0OGU2MjllMiIsImMiOjh9\
+https://digital.nhs.uk/dashboards/activity-in-nhs-hospitals
 
 We will make a few ammendments and add bar charts and call out cards.
 
