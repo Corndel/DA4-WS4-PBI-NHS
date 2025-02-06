@@ -95,6 +95,7 @@ Resize the visual occupy the top half of the canvas
 There are many things that need to be formatted in this visual to match the published example we are recreating
 
 ![alt text](image-10.png)
+
 ![alt text](image-9.png)
 
 
@@ -328,4 +329,6 @@ Firstly, to explore another way to change the name of fields on the display, we 
 
 additional text added
 jkjhkjh
+
+blah bah
 
