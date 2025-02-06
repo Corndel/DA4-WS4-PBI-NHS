@@ -302,23 +302,130 @@ Ensure you have Selected white Space in the main canvas then:
 ![alt text](image-34.png)
 
 Resize and move the visuals to match the target dashboard. \
-Experiement with the Slicer and note the fieldormat of the data within.
+Experiement with the Slicer and note the format of the data within.
+
+
 
 ![alt text](image-35.png)
 
-## Step 6 - Clustered Bar Chart
+## Step 6 - Summary Table (Matrix)
 
-![alt text](image-39.png)
+![alt text](image-50.png)
 
-In order to Create the Clustered Bar chart we must first `Unppivot some columns`
+### Step 6a - Data Prep
 
+Firstly, to explore another way to change the name of fields on the display, we will change the name of the columns in `Data view`.\
+ Changes made here will affect all visuals that the fields are involved in.\
+  (We are doing this instead of renaming the fields for the specific visual as we did before)
+
+ 1. Select `Data View` in the far left panel 
+ 1. Right click, or double click on a column you wish to rename.
+ 1. Enter the new name, and continue for all relevant columns, these will be the columns with `commas` that you inserted before
+
+ **_Note_** Column names: 
+ * Finished Consultant Episodes
+ * Ordinary Admission Episodes
+ * Day Case Episodes
+ * Finished Admission Episodes
+ * Emergency Admissions
+
+  ![alt text](image-52.png)
+
+ Secondly we will create a column for `Fiscal Month and Year`
+
+ 1. Ensure you are in `Data View`
+ 1. Select `Add column`
+ 1. Enter the dax code:
+    `Fiscal Month & Year = FORMAT([FY_Start_Date], "MMM YYYY") & " - " & FORMAT([FY_End_Date], "MMM YYYY")`
+1. Observe the newly created column
+
+![alt text](image-54.png)
+
+### Step 6b - Creating Summary Table(Matrix)
+
+1. Ensure you are in the `canvas view`
+1. Add a `Matrix Chart`
+1. Add the newly created `Fiscal Month and Year` to the `Column` field
+1. Add the newly renamed columns to the `Values` field 
+1. You will notice that the matrix is not displayed properly. We will address this next.
+
+![alt text](image-57.png)
+
+
+
+## Step 7 - Clustered Bar Chart
+
+In order to create this chart we need to Tranform the data.
+
+![alt text](image-51.png)
+
+
+### Step 7A - Unpivoting Columns
+
+The data in its raw from as supplied needs some transformation in order to create some other charts. \
+
+**_NOTE:_** Add a Clustered Bar chart to the cavas and see that we cannot get it to display correctly with the current data
+
+We need to "unpivot" some columns to it into the right form. \
+This will break our line chart, but it can be easily fixed. 
+
+1. Select `Transform data` from the top bar
+
+1. In the power query window hold `ctrl` and select the 5 columns we are working with
+  1. FInished consultant episodes
+  1. Ordinary Admission Episodes
+  1. Day Case Episodes
+  1. Finished Admission EPisodes
+  1. Emergency Admissions
+1. Select the `Transform` Tab
+1. Select `Unpivot Columns`
+
+![alt text](image-41.png)
+
+This will collapse the 5 columns into two, one called `Attribute` and another called `Total`.\
+
+You can rename these to your liking. \
+In the example they have been renamed `Admission type` and `Total` \
+To remane you can right click on the column header and select `Rename` Or \
+1. Select `Rename` from the top menu in the `Transform` Tab
+
+![alt text](image-43.png)
+
+Once you are finished 
+1. Select the `Home` Tab and  
+1. `Close & Apply`
+
+![alt text](image-44.png)
+
+As we have removed the columns that the line chart was built on this chart will now sow an error. \
+This is easy to fix.
+1. ENsure you are on the `canvas` view
+1. Deselect all of the fields in the Y-axis and add the new `Total` column to the Y-axis
+1. Add the new `Admission Type` to the `Legend`
+
+![alt text](image-48.png)
+
+The colours of the lines will have to be fixed again as well as removing the title of the legend. \
+This reformatting is left as an exercise. 
+
+![alt text](image-49.png)
+
+
+### Step 7B - Creating Clustered Bar Chart
+
+
+
+
+
+
+![alt text](image-40.png)
 ## Step 6 - Summary Tables
 
-We will create a table 
+We will create the following summary table 
 
 ![alt text](image-36.png)
 
-Firstly, to explore another way to change the name of fields on the display, we will change the name of the fields in `Data view`. Changes made here will affect all visuals that the fields are involved in.
+Firstly, to explore another way to change the name of fields on the display, we will change the name of the columns in `Data view`. Changes made here will affect all visuals that the fields are involved in.
 
  1. Select `Data View` in the far left panel 
  1. Right click on a column you wish to rename 
@@ -327,8 +434,4 @@ Firstly, to explore another way to change the name of fields on the display, we 
 
 ![alt text](image-37.png)
 
-additional text added
-jkjhkjh
-
-blah bah
 
