@@ -87,7 +87,6 @@ There are many things that need to be formatted in this visual to match the publ
 
 ![alt text](Images/image-9.png)
 
-
 * Title
 * Outline
 * Axis Labels
@@ -99,7 +98,33 @@ There are many things that need to be formatted in this visual to match the publ
 * X-axis Range
 * X-axis Values Formatting
 
-Of this list, the easiest thing to address is the `Title` and the most difficult is the `X-Axis` Values Formatting.
+Of this list, the easiest thing to address is the `Title` and the most difficult is the `X-Axis` Values Formatting
+
+1. Together we will fix the "X-axis formatting"
+1. In breakout rooms you can attempt a couple of others
+1. The rest are left as an exercise
+
+## X-axis Range
+Ensure you have the Line chart Selected in the main canvas then: 
+1. Select `Format Visual` in the `Visualisations` panel* 
+1. Expand the X-axis section 
+1. Set the Range from 01/04/2019 to 31/03/2021*Note how the Data Type for the X-axis is continuous
+
+**_NOTE:_**  Change the `Type` to categorical and see that you cannot limit the range anymore. \
+To revert select `Reset to default` at the bottom of all X-axis options.
+
+## Breakout rooms
+
+## Choose a few of the following to fix in breakout rooms together.
+* Title
+* Outline
+* Axis Labels
+* Legend
+* Y-axis Values Formatting
+* Number Formatting
+* Monthly View
+* Line colours
+
 
 ## Title
  1. Select `Format Visuals` in the `Visualisations` panel 
@@ -186,16 +211,6 @@ To revert select `Reset to default` at the bottom of all X-axis options.
 ![alt text](Images/image-19.png)
 
 
-Our charts are now very close. However, we still some issues:
-* X-axis not the same
-* Charts look different at extremes
-* Tool tips display differently
-
-##### Ours
-
-![alt text](Images/image-20.png)
-
-##### Target
 
 ![alt text](Images/image-21.png)
 
@@ -232,10 +247,7 @@ A Power Query Window will open
 While in PowerQuery we can streamline our pipline. \
 1. Remove any columns that we are not using
 1. Rename columns, these names will be the defaults for all visuals
-
-
-
- 1. Select `Close & Apply`
+1. Select `Close & Apply`
 
 ![alt text](Images/image-27.png)
 
@@ -463,3 +475,5 @@ Center the Title
 # Well Done!!!
 
 ![alt text](Images/image-99.png)
+
+
